@@ -24,6 +24,10 @@
 		ABD6DA78175E9FCD00AAF426 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD6DA57175E9FCD00AAF426 /* CoreData.framework */; };
 		ABD6DA80175E9FCD00AAF426 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABD6DA7E175E9FCD00AAF426 /* InfoPlist.strings */; };
 		ABD6DA83175E9FCD00AAF426 /* CollectionViewFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA82175E9FCD00AAF426 /* CollectionViewFunTests.m */; };
+		ABD6DA8D175E9FF400AAF426 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD6DA8C175E9FF400AAF426 /* Storyboard_iPad.storyboard */; };
+		ABD6DA90175EA04B00AAF426 /* CVFCollectionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA8F175EA04B00AAF426 /* CVFCollectionTestViewController.m */; };
+		ABD6DA93175EA1E500AAF426 /* CVFCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA92175EA1E500AAF426 /* CVFCollectionViewLayout.m */; };
+		ABD6DA96175EAC4200AAF426 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA95175EAC4200AAF426 /* TreeNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,13 @@
 		ABD6DA7F175E9FCD00AAF426 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABD6DA81175E9FCD00AAF426 /* CollectionViewFunTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewFunTests.h; sourceTree = "<group>"; };
 		ABD6DA82175E9FCD00AAF426 /* CollectionViewFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFunTests.m; sourceTree = "<group>"; };
+		ABD6DA8C175E9FF400AAF426 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
+		ABD6DA8E175EA04B00AAF426 /* CVFCollectionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFCollectionTestViewController.h; path = ../../CVFCollectionTestViewController.h; sourceTree = "<group>"; };
+		ABD6DA8F175EA04B00AAF426 /* CVFCollectionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVFCollectionTestViewController.m; path = ../../CVFCollectionTestViewController.m; sourceTree = "<group>"; };
+		ABD6DA91175EA1E500AAF426 /* CVFCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFCollectionViewLayout.h; sourceTree = "<group>"; };
+		ABD6DA92175EA1E500AAF426 /* CVFCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVFCollectionViewLayout.m; sourceTree = "<group>"; };
+		ABD6DA94175EAC4200AAF426 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		ABD6DA95175EAC4200AAF426 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +133,13 @@
 			children = (
 				ABD6DA62175E9FCD00AAF426 /* CVFAppDelegate.h */,
 				ABD6DA63175E9FCD00AAF426 /* CVFAppDelegate.m */,
+				ABD6DA8C175E9FF400AAF426 /* Storyboard_iPad.storyboard */,
+				ABD6DA8E175EA04B00AAF426 /* CVFCollectionTestViewController.h */,
+				ABD6DA8F175EA04B00AAF426 /* CVFCollectionTestViewController.m */,
+				ABD6DA91175EA1E500AAF426 /* CVFCollectionViewLayout.h */,
+				ABD6DA92175EA1E500AAF426 /* CVFCollectionViewLayout.m */,
+				ABD6DA94175EAC4200AAF426 /* TreeNode.h */,
+				ABD6DA95175EAC4200AAF426 /* TreeNode.m */,
 				ABD6DA6B175E9FCD00AAF426 /* CollectionViewFun.xcdatamodeld */,
 				ABD6DA5A175E9FCD00AAF426 /* Supporting Files */,
 			);
@@ -237,6 +255,7 @@
 				ABD6DA66175E9FCD00AAF426 /* Default.png in Resources */,
 				ABD6DA68175E9FCD00AAF426 /* Default@2x.png in Resources */,
 				ABD6DA6A175E9FCD00AAF426 /* Default-568h@2x.png in Resources */,
+				ABD6DA8D175E9FF400AAF426 /* Storyboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +293,9 @@
 				ABD6DA60175E9FCD00AAF426 /* main.m in Sources */,
 				ABD6DA64175E9FCD00AAF426 /* CVFAppDelegate.m in Sources */,
 				ABD6DA6D175E9FCD00AAF426 /* CollectionViewFun.xcdatamodeld in Sources */,
+				ABD6DA90175EA04B00AAF426 /* CVFCollectionTestViewController.m in Sources */,
+				ABD6DA93175EA1E500AAF426 /* CVFCollectionViewLayout.m in Sources */,
+				ABD6DA96175EAC4200AAF426 /* TreeNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +402,7 @@
 				GCC_PREFIX_HEADER = "CollectionViewFun/CollectionViewFun-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewFun/CollectionViewFun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,6 +414,7 @@
 				GCC_PREFIX_HEADER = "CollectionViewFun/CollectionViewFun-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewFun/CollectionViewFun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
