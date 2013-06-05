@@ -45,14 +45,53 @@
 - (CGRect)frameForCellAtIndexPath:(NSIndexPath *)indexPath
 {
     TreeNode *node = self.sortedObjects[indexPath.row];
-
-    CGFloat x = 0;
-    CGFloat y = 300 * indexPath.row;
-    CGFloat width = 50 * node.weight;
-    CGFloat height = 50 * node.weight;
-
-    return CGRectMake(x, y, width, height);
+    node.cachedFrame = [self rectForNode:node];
+    return node.cachedFrame;
 }
+
+- (CGRect)rectForNode:(TreeNode *)node
+{
+    if (!CGRectEqualToRect(CGRectZero, node.cachedFrame)) return node.cachedFrame;
+    
+    if (node.parent == nil) {
+        node.cachedFrame = self.collectionView.bounds;
+        return node.cachedFrame;
+    }
+
+    const CGFloat inset = 10;
+
+    CGRect parentFrame = [self rectForNode:node.parent];
+
+    CGFloat x = parentFrame.origin.x;
+    CGFloat y = parentFrame.origin.y;
+    CGFloat height = 0;
+    CGFloat width = 0;
+
+    if (parentFrame.size.height > parentFrame.size.width) {
+        height = (CGFloat) node.weight / (CGFloat) node.parent.weight * parentFrame.size.height;
+        width = parentFrame.size.width;
+    } else {
+        height = parentFrame.size.height;
+        width = (CGFloat) node.weight / (CGFloat) node.parent.weight * parentFrame.size.width;
+    }
+
+    for (TreeNode *otherChild in node.parent.children) {
+        if (otherChild == node) break;
+
+        CGRect otherChildRect = [self rectForNode:otherChild];
+
+        if (parentFrame.size.height > parentFrame.size.width) {
+            y += otherChildRect.size.height + inset;
+        } else {
+            x += otherChildRect.size.width + inset;
+        }
+    }
+
+    node.cachedFrame = CGRectInset(CGRectMake(x, y, width, height), inset, inset);
+
+    return node.cachedFrame;
+}
+
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
 {
