@@ -38,8 +38,15 @@
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 
     attributes.frame = [self frameForCellAtIndexPath:indexPath];
+    attributes.alpha = [self alphaForCellAtIndexPath:indexPath];
 
     return attributes;
+}
+
+- (CGFloat)alphaForCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    TreeNode *node = self.sortedObjects[indexPath.row];
+    return (CGFloat) node.weight / (CGFloat) node.parent.weight;
 }
 
 - (CGRect)frameForCellAtIndexPath:(NSIndexPath *)indexPath

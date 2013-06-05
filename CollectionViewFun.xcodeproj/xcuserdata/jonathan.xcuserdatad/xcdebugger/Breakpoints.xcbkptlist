@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CollectionViewFun/CVFCollectionViewLayout.m"
-         timestampString = "392084240.113483"
+         timestampString = "392085730.297634"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-rectForNode:"
          landmarkType = "5">
       </FileBreakpoint>
