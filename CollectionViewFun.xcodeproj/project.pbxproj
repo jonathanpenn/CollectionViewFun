@@ -10,7 +10,6 @@
 		ABD6DA52175E9FCD00AAF426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD6DA51175E9FCD00AAF426 /* UIKit.framework */; };
 		ABD6DA54175E9FCD00AAF426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD6DA53175E9FCD00AAF426 /* Foundation.framework */; };
 		ABD6DA56175E9FCD00AAF426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD6DA55175E9FCD00AAF426 /* CoreGraphics.framework */; };
-		ABD6DA58175E9FCD00AAF426 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD6DA57175E9FCD00AAF426 /* CoreData.framework */; };
 		ABD6DA5E175E9FCD00AAF426 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABD6DA5C175E9FCD00AAF426 /* InfoPlist.strings */; };
 		ABD6DA60175E9FCD00AAF426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA5F175E9FCD00AAF426 /* main.m */; };
 		ABD6DA64175E9FCD00AAF426 /* CVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DA63175E9FCD00AAF426 /* CVFAppDelegate.m */; };
@@ -63,8 +62,8 @@
 		ABD6DA81175E9FCD00AAF426 /* CollectionViewFunTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewFunTests.h; sourceTree = "<group>"; };
 		ABD6DA82175E9FCD00AAF426 /* CollectionViewFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFunTests.m; sourceTree = "<group>"; };
 		ABD6DA8C175E9FF400AAF426 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
-		ABD6DA8E175EA04B00AAF426 /* CVFCollectionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFCollectionTestViewController.h; path = ../../CVFCollectionTestViewController.h; sourceTree = "<group>"; };
-		ABD6DA8F175EA04B00AAF426 /* CVFCollectionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVFCollectionTestViewController.m; path = ../../CVFCollectionTestViewController.m; sourceTree = "<group>"; };
+		ABD6DA8E175EA04B00AAF426 /* CVFCollectionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFCollectionTestViewController.h; sourceTree = "<group>"; };
+		ABD6DA8F175EA04B00AAF426 /* CVFCollectionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVFCollectionTestViewController.m; sourceTree = "<group>"; };
 		ABD6DA91175EA1E500AAF426 /* CVFCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFCollectionViewLayout.h; sourceTree = "<group>"; };
 		ABD6DA92175EA1E500AAF426 /* CVFCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVFCollectionViewLayout.m; sourceTree = "<group>"; };
 		ABD6DA94175EAC4200AAF426 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 				ABD6DA52175E9FCD00AAF426 /* UIKit.framework in Frameworks */,
 				ABD6DA54175E9FCD00AAF426 /* Foundation.framework in Frameworks */,
 				ABD6DA56175E9FCD00AAF426 /* CoreGraphics.framework in Frameworks */,
-				ABD6DA58175E9FCD00AAF426 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +470,7 @@
 				ABD6DA88175E9FCD00AAF426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABD6DA89175E9FCD00AAF426 /* Build configuration list for PBXNativeTarget "CollectionViewFunTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +479,7 @@
 				ABD6DA8B175E9FCD00AAF426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

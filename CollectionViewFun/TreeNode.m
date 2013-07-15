@@ -18,7 +18,7 @@
 
 + (TreeNode *)randomTree
 {
-    return [self randomTreeWithChildCount:arc4random_uniform(3)+1 depth:arc4random_uniform(10)+1];
+    return [self randomTreeWithChildCount:arc4random_uniform(3)+1 depth:arc4random_uniform(5)+1];
 }
 
 + (TreeNode *)randomTreeWithChildCount:(int)childCount depth:(int)depth
